@@ -1,13 +1,16 @@
 import React from "react";
-
+import Quote from "./quote";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className=" bg-slate-400 flex flex-col  h-full">
-        <div className=" bg-orange-300 h-1/6"></div>
-        <div></div>
+        <div className=" bg-orange-300  h-40"><Quote/></div>
+
+
+
+        <div className=" bg-red-400 h-2/6">task</div>
         <div>
           <div></div>
           <div></div>
