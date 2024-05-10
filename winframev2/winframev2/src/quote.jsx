@@ -25,9 +25,9 @@ function Quote() {
 
   return (
     <>
-      <div className=" p-5 h-full bg-slate-800">
-        <div className="   text-gray-50 ">{quote}</div>
-        <div className="  text-white">{author}</div>
+      <div className=" p-5  h-full flex flex-col bg-slate-800">
+        <div className=" flex-grow   text-gray-50 ">{quote}</div>
+        <div className="h-1/6 flex justify-end items-center pr-4 text-white">{author}</div>
 
       </div>
     </>
