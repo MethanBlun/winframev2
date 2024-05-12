@@ -23,6 +23,7 @@ export default function Todolist() {
   }
 
   function handleDone() {
+   
     alert(`Congratulations! You've completed 1 task out of ${tasks.length}.`);
   }
 
@@ -30,7 +31,7 @@ export default function Todolist() {
     
     <div className="h-full flex flex-col ">
       <div className="bg-gradient-to-r  from-slate-800 to-slate-400 "> 
-      <div className="text-lg mt-5 mb-6 text-slate-400 font-bold    p-2 flex justify-center items-center ">
+      <div className="text-lg mt-5 mb-6 text-slate-200 font-bold    p-2 flex justify-center items-center ">
         Todolist
       </div>
 </div>
@@ -42,7 +43,7 @@ export default function Todolist() {
             handleButtonClick();
           }}
         >
-          <div className="flex  gap-2 h-2 items-center justify-between">
+          <div className="flex  gap-2 items-center justify-between">
             <div className="flex-grow">
               <input
                 className="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-500"
@@ -65,19 +66,19 @@ export default function Todolist() {
         {tasks.map((task, index) => (
           <li
             key={index}
-            className="flex items-center justify-between p-3 rounded-lg border border-slate-300 hover:bg-slate-200 shadow-sm"
+            className="flex items-center justify-between mb-3 mt-3 p-3 h-12 rounded-lg border border-slate-300 hover:bg-slate-600 shadow-xl "
           >
             <span className="text-base text-slate-200 overflow-y-auto pl-8 font-medium">{task}</span>
             <div className="flex gap-2">
               <button
                 onClick={handleDone}
-                className="px-3 py-2 rounded-lg bg-green-400 hover:bg-green-600 text-white font-medium"
+                className="px-3 py-2   rounded-lg bg-green-400 hover:bg-green-700 text-white font-medium"
               >
                 Done
               </button>
               <button
                 onClick={() => handleDelete(index)}
-                className="px-3 py-2 rounded-lg bg-red-500 hover:bg-red-600 text-white font-medium"
+                className="px-3 py-2 rounded-lg bg-red-500 hover:bg-red-700 text-white font-medium"
               >
                 Delete
               </button>

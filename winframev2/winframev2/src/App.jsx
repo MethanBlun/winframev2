@@ -12,7 +12,7 @@ function App() {
 
 
 
-        <div className=" bg-slate-500 h-2/6"><Todolist/></div>
+        <div className=" bg-slate-500  h-2/6"><Todolist/></div>
         <div>
           <div></div>
           <div></div>
