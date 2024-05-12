@@ -27,10 +27,16 @@ export default function Todolist() {
   }
 
   return (
+    
     <div className="h-full flex flex-col ">
-      <div className="flex items-center justify-center h-14 bg-slate-400 ">
+      <div className="bg-gradient-to-r  from-slate-800 to-slate-400 "> 
+      <div className="text-lg mt-5 mb-6 text-slate-400 font-bold    p-2 flex justify-center items-center ">
+        Todolist
+      </div>
+</div>
+      <div className="flex  items-center justify-center h-14 pt bg-slate-400 ">
         <form
-          className="p-5 m-6 w-full border border-slate-900 rounded-2xl"
+          className="p-5 m-6  w-full  border-slate-900 rounded-2xl"
           onSubmit={(event) => {
             event.preventDefault();
             handleButtonClick();
