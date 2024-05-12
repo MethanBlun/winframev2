@@ -1,6 +1,8 @@
 import React from "react";
 import Quote from "./quote";
+import Todolist from "./toDoList";
 import "./App.css";
+
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
 
 
 
-        <div className=" bg-red-400 h-2/6">task</div>
+        <div className=" bg-slate-500 h-2/6"><Todolist/></div>
         <div>
           <div></div>
           <div></div>
