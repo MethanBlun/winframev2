@@ -78,7 +78,7 @@ export default function Todolist() {
               </button>
               <button
                 onClick={() => handleDelete(index)}
-                className="px-3 py-2 rounded-lg bg-red-500 hover:bg-red-700 text-white font-medium"
+                className="px-3 py-2  rounded-lg bg-red-500 hover:bg-red-700 text-white font-medium"
               >
                 Delete
               </button>
